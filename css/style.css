@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "TT Lakes bold";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("../fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes-Bold.woff") format("woff"), url("../fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes normal";
+  src: url("TTLakes-Medium.eot");
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"), url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("TTLakes-Medium.woff") format("woff"), url("TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: TT Lakes normal;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 24px 0px 24px;
+}
+
+.nav-menu_left {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-menu_right {
+  display: flex;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff3e79;
+}
+
+.cross {
+  background-image: url("../images/cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search {
+  background-image: url("../images/search2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.phone {
+  background-image: url("../images/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.msg {
+  background-image: url("../images/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts {
+  background-image: url("../images/contacts.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  color: #1b1c21;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style-type: none;
+  margin-top: 46px;
+}
+
+.button-border {
+  border: none;
+  background-color: white;
+  color: #1b1c21;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.active {
+  color: #7e7e82;
+}
+
+.active::before {
+  content: url("../images/palka.svg");
+  width: 4px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 110px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 100px;
+  padding-left: 24px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-lang {
+  margin-top: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.email {
+  cursor: pointer;
+}
+
+.phone {
+  cursor: pointer;
+  font-family: TT Lakes bold;
+  font-size: 24px;
+}
+
+.radio {
+  appearance: none;
+}
+
+.lang-active {
+  color: #7e7e82;
+}
+
+label {
+  cursor: pointer;
+}
